@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div { 
+            background-color: brown;
+            height: 20px;
+            width: 20px;
+            position: relative;
+        }
+    </style>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body> 
+    <h1>hello</h1>
+    <p>hello</p>
+    <p id="second">second Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, reprehenderit.</p>
+    <p id="third">third Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptate veritatis expedita ex minima repellat alias voluptatibus voluptatum dolores sunt esse explicabo, necessitatibus assumenda ipsum, blanditiis ut labore. Beatae mollitia soluta voluptates. Ex minima quo officiis. Dolore numquam distinctio ipsam minima adipisci repudiandae perferendis rem possimus nesciunt hic? Placeat, nemo!</p>
+    
+    <button class="slide up" type="button">slide up</button>
+    <button class="slideToggle" type="button">slide toggle</button>
+    <button class="slideDown" type="button">slide down</button> 
+    <button class="animate" type="button">animate</button> 
+    
+    <div class="div"></div>
+    
+    <script>
+        $(document).ready(function() { 
+            $('.slide.up').click(function() { 
+                $('h1,p').slideUp(3000, function() {
+                    console.log("slide up");
+                });
+            });
+            
+            $('.slideDown').click(function() { 
+                $('h1,p').slideDown(3000, function() {
+                    console.log("slide down");
+                });
+            });
+
+            $('.slideToggle').click(function() {
+                $('h1,p').slideToggle(3000, function() {
+                    console.log("slide toggle");
+                });
+            });
+
+          
+            $('.animate').click(function() {
+                $('.div').animate({ left: "250px" },4000, function() {
+                    console.log("slideshow");
+                });
+            });
+        }); 
+    </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+<head><title>My document  </title>
+<link rel="stylesheet" href="stylish.css">
+</head>
+<body>
+
+<header>
+<nav>
+<ul>
+<li><a href="#">Home </a></li>
+<li><a href="#">About us  </a></li>
+<li><a href="#">pricing </a></li>
+<li><a href="#">resource </a></li>
+
+</ul>
+</nav>
+</header>
+</body>
+</html>

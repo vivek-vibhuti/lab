@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>
+</title>
+<style>
+div{
+border: 12px dotted green;
+margin :10px;
+padding :10px;
+bg-color:black:
+color: white;
+}
+</style>
+</head>
+< body>
+<div><p>content </p>
+</div>
+<body>
+</html>
